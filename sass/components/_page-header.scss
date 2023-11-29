@@ -1,0 +1,203 @@
+.list-img {
+    text-decoration: none;
+}
+.header {
+    margin-top: 0;
+    border-bottom: 1px solid var(--border-botoom-color);
+    background-color: var(--primary-background-color);
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+
+&__menu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    transition-property: color;
+    
+
+}
+
+
+&__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+&__link {
+    position: relative;
+    display: block;
+    color: var(--secondary-text-color);
+   
+}
+
+&__link:hover,
+&__link:focus {
+    color: var(--accent-color);
+}
+
+&__link.current {
+    color: var(--accent-color);
+}
+
+&__link::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    transform: scaleX(0);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    background-color: var(--accent-color);
+    }
+
+&__link:hover::after {
+    transform: scaleX(1);
+    }
+
+&__link.current::after {
+    transform: scaleX(1);
+    }
+
+&__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: start;
+    display: none;
+    
+    @media (min-width: 768px) {
+            display: block;
+            display: flex;
+        }
+
+}
+&__list :hover,
+&__list :focus {
+    color: var(--accent-color);
+
+}
+&__link {
+        padding-top: 32px;
+        padding-bottom: 32px;
+}
+ &__mail,
+ &__tel {
+     padding: 0;
+     transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: var(--timing-function);
+
+ }
+&__item {
+    // margin-right: 50px;
+    padding: 0;
+
+}
+&__item:last-child {
+     margin-right: 0;
+}
+
+&__icon {
+            display: inline-block;
+            margin-right: 10px;
+            fill: var(--primary-text-color);
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: var(--timing-function);
+        }
+
+        &__mail:hover &__icon,
+        &__mail:focus &__icon {
+            fill: var(--accent-color);
+        }
+
+        &__icon {
+            display: inline-block;
+            margin-right: 10px;
+            fill: var(--primary-text-color);
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: var(--timing-function);
+        }
+
+        &__tel:hover &__icon,
+        &__tel:focus &__icon {
+            fill: var(--accent-color)
+        }
+
+        &__link {
+            display: block;
+        }
+
+    &__address {
+            padding: 0;
+            display: flex;
+            display: none;
+            
+                @media (min-width: 768px) {
+                    display: block;
+                }
+        }
+
+        &__mail {
+            display: flex;
+            color: var(--primary-text-color);
+
+            @media (min-width: 768px) {
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                
+        }
+
+        &__tel {
+            display: flex;
+            color: var(--primary-text-color);
+
+            @media (min-width: 768px) {
+                    align-items: center;
+                    justify-content: center;
+                }
+        }
+
+        
+}
+// .header-social {
+//     display: flex;
+// }
+.list-header {
+    @media (max-width: 1200px) {
+            flex-direction: column;
+            display: flex;
+            align-items: baseline;
+        }
+
+}
+.mail-header {
+    margin-bottom: 10px;
+
+    @media (min-width: 1200px) {
+            margin-bottom: 0;
+        }
+}
+.header__item+.header__item {
+    margin-left: 50px;
+}
+.item-header+.item-header {
+    margin-left: 0;
+    @media (min-width: 1200px) 
+    {margin-left: 30px;}
+}
+
