@@ -71,6 +71,10 @@
 // console.log(salary);
 // console.log(typeof salary);
 
+// let salary = 5258.1215;
+// salary = Number(salary.toFixed(3));
+// console.log(salary);
+
 // Приведение/преобразование к числу
 // let quantity = '30';
 // let value = 'Эту строку не возможно привести к числу';
@@ -104,6 +108,15 @@
 // const result = base ** power;
 // console.log(result);
 
+// let base = prompt('Давай число');
+// base = Number(base);
+// console.log(base);
+// let power = prompt('Давай степень');
+// power = Number(power);
+// console.log(power);
+// const result = base ** power;
+// console.log(result);
+
 
 
 // Math.random() * (max - min) + min
@@ -121,8 +134,13 @@
 // console.log(color);
 // document.body.style.backgroundColor = color;
 
+
 // длинна строки
 // const message = 'в этой стоке 26 символов  ';
+// console.log(message);
+// console.log(message.length);
+
+// const message = ' ghbmfjvnfkj fkrjnk   bjnjn   nhbhj   rjd jdcn';
 // console.log(message);
 // console.log(message.length);
 
@@ -196,7 +214,6 @@
 // console.log(string3.includes(blackListedWord2));
 
 
-
 // Операторы сравнения
 // console.log(15 > 10);
 
@@ -234,7 +251,6 @@
 // const canAccessContent = subscription === 'pro' || subscription === 'vip';
 // console.log('Есть доступ к контенту', canAccessContent);
 
-
 // Оператор ветвления
 // if (40 > 30) {
 //     console.log('x > y');
@@ -268,6 +284,10 @@
 // const message = balance >= 0 ? 'Позитивный баланс' : 'Негативный баланс';
 // console.log(message);
 
+// const balance = -1000;
+// const message = balance >= 0 ? 'yes' : 'no';
+// console.log(message);
+ 
 // Примітивні типи даних вони імутабельні, їх можна лише перевизначити за допомогою =
 
 // ______________________________________________________________________________________________
@@ -302,10 +322,13 @@
 // Напиши скрипт який виводить у консоль заокруглені вгору / вниз  і тд значення змінної
 // value.Використай методи Math.floor(), Math.ceil(), Math.round().
 // Перевір що буде в консолі при значеннях 27.3 та 27.9
-// const value = 27.3;
-// console.log(Math.ceil(value)); округлить в сторону більшого значення
-// console.log(Math.floor(value)); округлить в сторону меншого значення
-// console.log(Math.round(value)); округлить завжди по математичному принципу
+// const value = 27.6;
+// // округлить в сторону більшого значення
+// console.log(Math.ceil(value));
+// // округлить в сторону меншого значення
+// console.log(Math.floor(value));
+// // округлить завжди по математичному принципу
+// console.log(Math.round(value));
 
 // _______________________________________________________________________________
 //  Example 5 Шаблонні рядки
@@ -369,6 +392,15 @@
 // // піднесення в степені
 // // const bmi = weight / Math.pow(height, 2);
 // const bmi = Number((weight / height ** 2).toFixed(1));
+// console.log(bmi);
+
+// let weight = '36,5';
+// let height = '165.7';
+// weight = Number(weight.replace(',', '.'));
+// console.log(weight);
+// height = Number(height);
+// console.log(height);
+// const bmi = Number((weight / height ** 2).toFixed(5));
 // console.log(bmi);
 // ________________________________________________________________
 // Exsampe 7 Оператори порівняння та приведення типів
