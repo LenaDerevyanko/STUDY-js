@@ -27,11 +27,11 @@
 // console.log('после');
 
 // Всплывающее окно confirm
-1
+// 1
 // const message = 'Хотите продлить подписку';
 // const shouldRenew = confirm(message);
 // console.log(shouldRenew);
-2
+// 2
 // const shouldRenew = confirm('Хотите продлить подписку');
 // console.log(shouldRenew);
 
@@ -42,24 +42,24 @@
 // console.log(typeof quantity);
 
 // Числа (вырезать число до точки 50)
-1.
+// 1.
 // let elementWidth = '50px';
 // const result = Number.parseInt(elementWidth);
 // console.log(result);
 // console.log(typeof result);
-2.
+// 2.
 // let elementWidth = '50px';
 // elementWidth = Number.parseInt(elementWidth);
 // console.log('elementWidth:', elementWidth);
 // console.log(typeof elementWidth);
 
 // Числа (вырезать число полностью 200.74)
-1.
+// 1.
 // let elementWidth = '200.74px';
 // const result = Number.parseFloat(elementWidth);
 // console.log(result);
 // console.log(typeof result);
-2.
+// 2.
 // let elementWidth = '200.74px';
 // elementWidth = Number.parseFloat(elementWidth);
 // console.log('elementWidth:', elementWidth);
@@ -402,7 +402,10 @@
 // console.log(height);
 // const bmi = Number((weight / height ** 2).toFixed(5));
 // console.log(bmi);
-// ________________________________________________________________
+// ___
+
+
+// _____________________________________________________________
 // Exsampe 7 Оператори порівняння та приведення типів
 // Яким буде результат виразів?
 // console.log(5 > 4); true

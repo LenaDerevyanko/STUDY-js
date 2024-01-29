@@ -284,6 +284,8 @@
 
 
 
+// //Скрипт введення кількості
+
 const btnAdd = document.querySelector('button[data-add]');
 const btnReset = document.querySelector('button[data-reset]')
 const valueInput = document.querySelector('input[data-value]');
@@ -310,3 +312,5 @@ btnReset.addEventListener('click', function () {
     total = 0;
     outputEl.textContent = total;
 })
+
+
