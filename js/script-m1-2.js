@@ -127,6 +127,215 @@
 // // 4. сделать лог message
 // console.log(message);
 
+// __________________________________________________________________________
+
+// const value = 4;
+// if (value > 5) {
+//     console.log('4>5');
+// } else if(value > 6){
+//     console.log('4>6');
+// } else {
+//     console.log('else');
+// }
+
+// const value = '';
+// if (value) {//0=>false
+//     console.log('if');
+// } else {
+//     console.log('else');
+// }
+
+// condition ? example 1 : example 2
+
+
+// const result  5 > 6 ? 'більше' : 'меньше'
+//                          true     false
+// Присвой в результат виразу тернарного виразу, якщо 5 більше 6 то
+//   присвой рядочок меньше, якщо все ж таки умова буде правдивлою,
+//   отримаємо блок тру,більше
+// let result;
+// if (7 > 6) {
+//     result = 'більше';
+// } else {
+//     result = 'меньше';
+// }
+// console.log(result);
+
+
+// const result = 10 + 5;
+// console.log(result);
+// console.log(testValue);
+// const value = 5;
+// if (value === 1) {
+    
+// } else if (value === 2) {
+    
+// } else if (value === 2) {
+
+// } else if (value === 5) {
+
+// } else {
+//     console.log('default');
+// }
+
+// switch (value) {
+//     case 1:
+//         console.log('one');
+//         break;
+//     case 2:
+//         console.log('two');
+//         break;
+//     case 5:
+//         console.log('Good result');
+//         break;
+//     default:
+//         console.log('default');
+// }
+// _________________________________________________________________________
+// області видимості - Де замкнена ваша змінна
+// 1 Глобальна(повністю весь наш файл)
+// 2 блочна У фігурних дужках
+// 3 функціональна (в функції)
+
+// блок це будь що замкнене в фігурні дужки
+
+// const a = 15;
+// if (true) {
+//     console.log(a);
+// }
+// if (true) {
+//     const b = 22;
+// }
+// console.log(b); //b is not defined- можемо з середини підніматися на зовні
+
+// const a = 15;
+// if (true) {
+//     console.log(a);
+// }
+// if (true) {
+//     var b = 22;
+// }
+// console.log(b); //var можна витянути за межі блока, якщо буде в функції
+// то буде писати помилку. Функціонал додптково блокує
+
+// Приклад 1
+// let a = 15;     //якщо тру то ми змінну перевизначаємо з 15 на 25
+// if (true) {     //якщо false то оголошена змінна залишається 15
+//     a = 25;
+// }
+// console.log(a);
+
+// Приклад 2
+// let a = 15;     //15 -змінна не побачить що віббувається в блоці
+// if (true) {     //тому залишить попередні дані
+//     //блочна змінна
+//    let a = 1;
+//     a = 25;
+// }
+// console.log(a);
+
+// Приклад 3
+// let a = 15;     //глобальна змінна
+// if (true) {     //після оголошення глобальної не мложна переоголошувати
+//     //блочна змінна
+//     a = 25;
+//    let a = 1;
+// }
+// console.log(a);
+
+
+// let a = 10;
+//оголосили глоб змінну, ідемо в іф, оголошенна змінна а,
+
+// if (true) {
+//     let a = 15;
+//     if (true) {            //10
+//         a = 25;
+//     }
+// }
+// console.log(a);
+
+// if (true) {
+//     let a = 15;
+//     if (true) {            //25
+//         a = 25;
+//     }
+//     console.log(a);
+// }
+
+// if (true) {
+//      a = 15;
+//     if (true) {            //25
+//         a = 25;
+//     }
+// }
+// console.log(a);
+
+// let a = 15;
+
+// if (true) {
+//      a = 15;
+//     if (true) {            //15
+//        let a = 25;
+//     }
+// }
+// console.log(a);
+
+
+// let b = 25;
+// if (true) {
+//     let a = 15;
+//     b = 44;
+//     if (true) {            //31
+//         a = 25;            //a is not defined
+//         b = 31;
+//     }
+//     a = 44;
+//     console.log(b);
+// }
+// console.log(a);
+
+// ____________________________________________________________________
+// ЦИКЛИ
+// for (let i = 0; i < 5; i += 1){
+//     console.log(i);
+// }
+// порядковий номер 123456
+// const str = 'Hello world';
+// // індекс 012345
+// for (let i = 0; i < str.length; i += 1){
+//     console.log(str[i]); //0123456
+// }
+
+// while (true){
+//     console.log('Hello world');
+// }
+
+// const str = 'hello world';
+// let i = 0;
+// do {
+//     if (str[i] === 'w') {
+//         console.log('yes');
+//         break;
+//     }
+//     console.log('no');
+//     i += 1;
+    
+// } while (i < str.length);
+
+// let i = 0;
+// while (i < str.length) {
+//     if (str[i] === 'w'){
+//         console.log('yes');
+//         break;
+//     }
+//     console.log('no', str[i]);
+//     i += 1;
+// }
+
+// _________________________________________________________________________
+
+
 
 
 // Цикл For(один кусочек вывести произвольное количество раз)
@@ -632,14 +841,14 @@
 // Якщо введено пароль "Я адмін", то рядок "Здравствуйте!"
 // Інше рядок - "Не вірний пароль!"
 
-const login = prompt('Тут має бути логін');
-    if (!login){
-        console.log("Скасовано");
-    } else if (login === "адмін") {
-       const password = prompt('Ваш пароль')
-        console.log(password === "Я адмін" ? "Здравствуйте!" : "Не вірний пароль!");
-    } else {
-        console.log("Я вас не знаю");
-    }
+// const login = prompt('Тут має бути логін');
+//     if (!login){
+//         console.log("Скасовано");
+//     } else if (login === "адмін") {
+//        const password = prompt('Ваш пароль')
+//         console.log(password === "Я адмін" ? "Здравствуйте!" : "Не вірний пароль!");
+//     } else {
+//         console.log("Я вас не знаю");
+//     }
 
 
