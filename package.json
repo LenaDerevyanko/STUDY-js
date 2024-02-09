@@ -1,0 +1,26 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LenaDerevyanko/STUDY-js.git"
+  },
+  "author": "derevyanko <lena05121986@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LenaDerevyanko/STUDY-js/issues"
+  },
+  "homepage": "https://github.com/LenaDerevyanko/STUDY-js#readme",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

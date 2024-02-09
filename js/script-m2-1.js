@@ -26,19 +26,46 @@
 //     console.log(array[i]);
 // }
 
-///For...of
-const array = [1, 'Hello', null, true, [1, 2, 3]];
-for (let item of array) {
-    // console.log(item);
-    if (typeof item === 'string') {
-        item === false;
-    }
-}
-console.log(array);
 
-for (let i = 0; i < array.length; i+=1) {
-    if (typeof array[i]) {
-        const element = array[i];
+
+///For...of
+
+// const array = [1, 'Hello', null, true, [1, 2, 3]];
+
+// for (let item of array) {
+//     if (typeof item === 'string') {
+//         item === false;
+//     }
+// }
+// console.log('for of',array);
+
+// for (let i = 0; i < array.length; i+=1) {
+//     if (typeof array[i]) {
+//         const element = array[i];
+//     }
+// }
+// console.log('ad', array);
+// for (let i = 0; i < array.length; i+=1) {
+//     if (typeof array[i] === 'string') {
+//         array[i] = false;
+//     }
+// }
+// console.log('for', array);
+
+//while//
+const array = [1, 'Hello', null, true, [1, 2, 3]];
+
+// let i = 0;
+// while (i < array.length) {
+//     console.log(array[i]);
+//     i += 1;
+// }
+
+let i = 0;
+while (i < array.length) {
+        if (typeof array[i] === 'string') {
+        array[i] = false;
     }
-    
+    i += 1;
 }
+
