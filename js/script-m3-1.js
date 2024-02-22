@@ -7,9 +7,9 @@
 // const account = {
 //     balance: 0,
 //     transactions: [],
-//     createTransaction(amount, type) { 
+//     createTransaction(amount, type) {
 //         return {
-//             id: Date.now(), 
+//             id: Date.now(),
 //             amount,
 //             type
 //         }
@@ -24,7 +24,7 @@
 //     },
 //     withdraw(amount) {
 //         if (amount > this.balance || amount <= 0) {
-//             return 'Недостатньо коштів!!!';            
+//             return 'Недостатньо коштів!!!';
 //         }
 //         const item = this.createTransaction(amount,
 //             Transaction.WITHDRAW)
@@ -52,7 +52,7 @@
 //         }
 //         return sum;
 //     }
-// } 
+// }
 // account.deposit(1);
 // account.deposit(1231);
 // account.deposit(1431);
@@ -63,3 +63,50 @@
 // console.log(account.createTransaction(1000, "deposit"));
 // console.log(account.withdraw(123));
 // console.log(account.getBalance());
+
+
+const cart = {
+    items: [],
+    getItems() {
+        return this.items;
+    },
+    add(product) {
+        this.items.push(product);
+
+
+    //     for (const item of this.items) {
+    //         if (item.name === CSSMathProduct.name) {
+    //             item.quantity += 1;
+    //             return;
+    //         }
+    //     }
+    //     const newProduct = {
+    //         ...product,
+    //         quantity: 1,
+    //     }
+    },
+    remove(productName) {
+        const { items } = this;
+
+        for (let i = 0; i < items.length; i += 1) {
+            const { name } = items[i];
+            if (productName === name)  {
+                console.log('Нашли такой товар', productName);
+            }
+        }
+    },
+    clear() { },
+    countTotalPrise() { },
+    increaseQuantity() { },
+    decreaseQuantity() { },
+} 
+console.log(cart.getItems());
+cart.add({ name: 'apple', price: 50});
+cart.add({ name: 'lemon', price: 100});
+cart.add({ name: 'pineapple', price: 120});
+cart.add({ name: 'mursh', price: 140 });
+cart.add({ name: 'juse', price: 80 });
+cart.add({ name: 'lemon', price: 100 });
+cart.add({ name: 'apple', price: 50 });
+cart.remove('apple');
+console.table(cart.getItems())
