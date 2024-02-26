@@ -71,36 +71,28 @@ const cart = {
         return this.items;
     },
     add(product) {
-        this.items.push(product);
-
-
-    //     for (const item of this.items) {
-    //         if (item.name === CSSMathProduct.name) {
-    //             item.quantity += 1;
-    //             return;
-    //         }
-    //     }
-    //     const newProduct = {
-    //         ...product,
-    //         quantity: 1,
-    //     }
-    },
-    remove(productName) {
-        const { items } = this;
-
+        this.items.push(product)
+     },
+    remove(productName) { 
+        const { items } = this; 
         for (let i = 0; i < items.length; i += 1) {
-            const { name } = items[i];
-            if (productName === name)  {
-                console.log('Нашли такой товар', productName);
-            }
+            const {name} = items[i];
+           if (productName === name) {
+               console.log('Нашли цей продукт', productName);
+               console.log(i);
+
+               items.splice(i, 1);
         }
+       }
     },
-    clear() { },
+    clear() {
+        this.items = [];
+     },
     countTotalPrise() { },
     increaseQuantity() { },
     decreaseQuantity() { },
-} 
-console.log(cart.getItems());
+};
+
 cart.add({ name: 'apple', price: 50});
 cart.add({ name: 'lemon', price: 100});
 cart.add({ name: 'pineapple', price: 120});
@@ -109,4 +101,8 @@ cart.add({ name: 'juse', price: 80 });
 cart.add({ name: 'lemon', price: 100 });
 cart.add({ name: 'apple', price: 50 });
 cart.remove('apple');
-console.table(cart.getItems())
+// cart.clear();
+
+console.table(cart.getItems());
+
+
